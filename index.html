@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>reveal.js</title>
+	<title>Ahead-Of-Time</title>
 
 	<link rel="stylesheet" href="css/reveal.css">
 	<link rel="stylesheet" href="css/theme/white.css">
@@ -55,96 +55,105 @@
 			</section>
 			<section>
 				<h2>How AOT works</h2>
-				<p class="fragment fade-up">Phase 1: analysis</p>
-				<p class="fragment fade-up">Phase 2: code generation</p>
-				<p class="fragment fade-up">Phase 3: binding expression validation</p>
+				<p class="fragment fade-up">analysis</p>
+				<p class="fragment fade-up">code generation</p>
+				<p class="fragment fade-up">binding</p>
 			</section>
 			<section>
 				<section>
-					<h2>Phase 1: analysis</h2>
+					<h2>analysis</h2>
 				</section>
 				<section>
-					<h3>Component</h3>
+					<h4>small example</h4>
 					<img src="src/component-templates.png">
 				</section>
 				<section>
+					<h4>directives</h4>
 					<img src="src/directives-templates.png">
 				</section>
 				<section>
+					<h4>parsing html</h4>
 					<img src="src/parser-html.png">
 				</section>
 				<section>
+					<h4>parsing expression</h4>
 					<img src="src/parser-expresion.png">
 				</section>
 				<section>
+					<h4>throw exeption</h4>
 					<img src="src/parser-line-column-number.png">
 				</section>
 				<section>
+					<h4>parsing directives</h4>
 					<img src="src/parser-directives.png">
 				</section>
 			</section>
 			<section>
 				<section>
-					<h2>Phase 2: binding</h2>
+					<h2>create</h2>
 				</section>
 				<section>
+					<h4>element</h4>
 					<img src="src/create-elements.png">
 				</section>
 				<section>
+					<h4>create elements</h4>
 					<img src="src/create-elements-2.png">
 				</section>
 				<section>
+					<h4>create directives</h4>
 					<img src="src/create-directives.png">
 				</section>
 				<section>
+					<h4>resolve dependencies</h4>
 					<img src="src/resolve-dependencies.png">
 				</section>
 			</section>
 			<section>
 				<section>
-					<h2>Phase 3: code generation</h2>
+					<h2>binding</h2>
 				</section>
 				<section>
+					<h4>binding expression</h4>
 					<img src="src/data-binding.png">
 				</section>
 				<section>
+					<h4>check value</h4>
 					<img src="src/data-binding-2.png">
 				</section>
 				<section>
+					<h4>throw error</h4>
 					<img src="src/data-binding-error-handling.png">
 				</section>
 			</section>
 			<section>
 				<section>
-					<h2>Class View</h2>
+					<h4>class view</h4>
+					<img src="src/view.png" class="fragment fade-up">
 				</section>
 				<section>
-					<img src="src/view.png">
-				</section>
-				<section>
-					<img src="src/previous-ngelement.png">
-				</section>
-				<section>
-					<img src="src/optimized-data-structures.png">
-				</section>
-				<section>
+					<h4>view cache</h4>
 					<img src="src/view-cache.png">
 				</section>
 			</section>
 			<section>
 				<section>
-					<h2>Phase 3: code generation</h2>
+					<h2>code generation</h2>
 				</section>
 				<section>
+					<h4>create elements</h4>
 					<img src="src/create-elements-3.png">
 				</section>
 				<section>
+					<h4>create directives</h4>
 					<img src="src/create-directives-3.png">
 				</section>
 				<section>
+					<h4>data binding</h4>
 					<img src="src/data-binding-3.png">
 				</section>
 				<section>
+					<h4>generated view classes</h4>
 					<img src="src/generated-view-classes.png">
 				</section>
 			</section>
